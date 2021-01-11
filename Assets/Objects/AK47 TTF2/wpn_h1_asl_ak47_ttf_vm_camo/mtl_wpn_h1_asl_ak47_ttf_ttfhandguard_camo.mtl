@@ -1,0 +1,8 @@
+newmtl mtl_wpn_h1_asl_ak47_ttf_ttfhandguard_camo
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Ks 0.50 0.50 0.50
+map_Kd ..\\_images\\mtl_wpn_h1_asl_ak47_ttf_ttfhandguard_camo_col.tga
+map_bump ..\\_images\\mtl_wpn_h1_asl_ak47_ttf_ttfhandguard_camo_nml.tga
+map_Ks ..\\_images\\~mtl_wpn_h1_asl_ak47_ttf_ttfh~82b18315.tga
