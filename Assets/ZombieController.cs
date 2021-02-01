@@ -2,9 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Events;
 
 public class ZombieController : MonoBehaviour
 {
+    [SerializeField] UnityEvent Idle;
+    [SerializeField] UnityEvent Run;
+    [SerializeField] UnityEvent Attack;
     [SerializeField] string idleAnimationName;
     [SerializeField] string AttackAnimationName;
     [SerializeField] string RunAnimationName;
@@ -31,17 +35,21 @@ public class ZombieController : MonoBehaviour
         if (_dist > _radius )
         {
             _anim.SetTrigger(idleAnimationName);
+            Idle.Invoke();
             _nav.enabled = false;
         }
         if (_dist < _radius && _dist > _hitRadius)
         {
             _anim.SetTrigger(RunAnimationName);
             _nav.enabled = true;
+            Run.Invoke();
             _nav.SetDestination(_player.transform.position);
         }
         if (_dist < _radius && _dist < _hitRadius)
         {
+            Attack.Invoke();
             _anim.SetTrigger(AttackAnimationName);
+            _nav.enabled = true;
         }
         }
         
