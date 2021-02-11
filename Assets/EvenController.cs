@@ -32,9 +32,9 @@ public class EvenController : MonoBehaviour
                 ExitEvent.Invoke();
             }
         }
-        public void StartEven() {
-            StartEvent = true;
-        }
+    public void StartEven() {
+        StartEvent = true;
+    }
 
 }
      
