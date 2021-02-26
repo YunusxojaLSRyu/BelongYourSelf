@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
@@ -27,6 +28,9 @@ public class ZombieController : MonoBehaviour
     [SerializeField] GameObject _player;
     NavMeshAgent _nav;
     Animator _anim;
+    public GameObject[] Points;
+    int i;
+    float Dist_to;
     
 
     void Start()
@@ -116,14 +120,24 @@ public class ZombieController : MonoBehaviour
                     if (RayToScan())
                     {
                        _nav.enabled = true;
+                       _nav.SetDestination(_player.transform.position);
                           // Контакт с целью
                     }
                     else
                     {
-        
+                        Brojdeniye();
                     }
                 }  
         
     } 
+    void Brojdeniye(){
+        _nav.enabled = true;
+        
+        _nav.SetDestination(Points[i].transform.position);
+        if (Vector3.Distance(Points[i].transform.position, gameObject.transform.position) < 2)
+        {
+            i = (UnityEngine.Random.Range(0, 4)); 
+        }
+    }
   }
 }
