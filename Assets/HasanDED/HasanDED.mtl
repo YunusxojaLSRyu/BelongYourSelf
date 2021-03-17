@@ -1,0 +1,98 @@
+# Exported from Fuse 1.3.0
+
+newmtl Eyewear
+illum 4
+Kd 1.00 1.00 1.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 1.00 1.00 1.00
+map_Kd HasanDED_Eyewear_diffuse.png
+map_Ks HasanDED_Eyewear_specular.png
+bump HasanDED_Eyewear_normal.png
+map_Ns HasanDED_Eyewear_gloss.png
+
+newmtl Beard
+illum 4
+Kd 1.00 1.00 1.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 1.00 1.00 1.00
+map_Kd HasanDED_Beard_diffuse.png
+map_Ks HasanDED_Beard_specular.png
+bump HasanDED_Beard_normal.png
+map_Ns HasanDED_Beard_gloss.png
+
+newmtl Moustache
+illum 4
+Kd 1.00 1.00 1.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 1.00 1.00 1.00
+map_Kd HasanDED_Moustache_diffuse.png
+map_Ks HasanDED_Moustache_specular.png
+bump HasanDED_Moustache_normal.png
+map_Ns HasanDED_Moustache_gloss.png
+
+newmtl Hair
+illum 4
+Kd 1.00 1.00 1.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 1.00 1.00 1.00
+map_Kd HasanDED_Hair_diffuse.png
+map_Ks HasanDED_Hair_specular.png
+bump HasanDED_Hair_normal.png
+map_Ns HasanDED_Hair_gloss.png
+
+newmtl Body
+illum 4
+Kd 1.00 1.00 1.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 1.00 1.00 1.00
+map_Kd HasanDED_Body_diffuse.png
+map_Ks HasanDED_Body_specular.png
+bump HasanDED_Body_normal.png
+map_Ns HasanDED_Body_gloss.png
+
+newmtl Bottom
+illum 4
+Kd 1.00 1.00 1.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 1.00 1.00 1.00
+map_Kd HasanDED_Bottom_diffuse.png
+map_Ks HasanDED_Bottom_specular.png
+bump HasanDED_Bottom_normal.png
+map_Ns HasanDED_Bottom_gloss.png
+
+newmtl Shoes
+illum 4
+Kd 1.00 1.00 1.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 1.00 1.00 1.00
+map_Kd HasanDED_Shoes_diffuse.png
+map_Ks HasanDED_Shoes_specular.png
+bump HasanDED_Shoes_normal.png
+map_Ns HasanDED_Shoes_gloss.png
+
+newmtl Top
+illum 4
+Kd 1.00 1.00 1.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 1.00 1.00 1.00
+map_Kd HasanDED_Top_diffuse.png
+map_Ks HasanDED_Top_specular.png
+bump HasanDED_Top_normal.png
+map_Ns HasanDED_Top_gloss.png
+

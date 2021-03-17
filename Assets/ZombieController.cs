@@ -29,7 +29,7 @@ public class ZombieController : MonoBehaviour
     NavMeshAgent _nav;
     Animator _anim;
     public GameObject[] Points;
-    int i;
+    int i = 0;
     float Dist_to;
     
 
