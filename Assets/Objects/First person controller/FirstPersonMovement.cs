@@ -18,9 +18,6 @@ public class FirstPersonMovement : MonoBehaviour
         {
             OnMovement.Invoke();
         }
-        if (Input.GetKeyDown(KeyCode.LeftControl) )
-        {
-            speed = speed / 2;
-        }
+        
     }
 }
