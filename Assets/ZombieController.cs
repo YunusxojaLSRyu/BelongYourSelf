@@ -10,12 +10,16 @@ public class ZombieController : MonoBehaviour
     [SerializeField] UnityEvent Idle;
     [SerializeField] UnityEvent Attack;
     [SerializeField] UnityEvent Run;
+    [SerializeField] UnityEvent Walk;
     [SerializeField] string idleAnimationName;
     [SerializeField] string AttackAnimationName;
     [SerializeField] string RunAnimationName;
+    [SerializeField] string WalkAnimationName;
     [SerializeField] string dieAnimationName;
+    [SerializeField] string sleepAnimationName;
     public string targetTag = "Player";
     public int rays = 8;
+    public float notSleepDist;
     public int distance = 33;
     public float angle = 40;
     public Vector3 offset;
@@ -31,7 +35,7 @@ public class ZombieController : MonoBehaviour
     public GameObject[] Points;
     int i = 0;
     float Dist_to;
-    
+    public bool SleepingMode = false;
 
     void Start()
     {
@@ -93,9 +97,17 @@ public class ZombieController : MonoBehaviour
 
     void Update()
     {
-        if (_game == true)
+        _dist = Vector3.Distance(_player.transform.position, transform.position);
+        if(SleepingMode == true)
         {
-            _dist = Vector3.Distance(_player.transform.position, transform.position);
+            if (_dist < notSleepDist)
+            {
+                _anim.SetTrigger(sleepAnimationName);
+                SleepingMode = false;
+            }
+        }
+        if (_game == true && SleepingMode == false)
+        {
                 if (_dist > distance )
                 {
                     _anim.SetTrigger(idleAnimationName);
@@ -121,7 +133,7 @@ public class ZombieController : MonoBehaviour
                     {
                        _nav.enabled = true;
                        _nav.SetDestination(_player.transform.position);
-                          // Контакт с целью
+                        _anim.SetTrigger(RunAnimationName);  // Контакт с целью
                     }
                     else
                     {
@@ -132,7 +144,7 @@ public class ZombieController : MonoBehaviour
     } 
     void Brojdeniye(){
         _nav.enabled = true;
-        
+        _anim.SetTrigger(WalkAnimationName);
         _nav.SetDestination(Points[i].transform.position);
         if (Vector3.Distance(Points[i].transform.position, gameObject.transform.position) < 2)
         {
