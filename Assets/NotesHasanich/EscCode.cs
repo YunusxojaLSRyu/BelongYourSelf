@@ -5,14 +5,30 @@ using UnityEngine;
 
 public class EscCode : MonoBehaviour
 {
-    public UnityEvent Esc;
+    public GameObject Menu;
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape))
+        if(Input.GetKeyDown(KeyCode.Escape) )
         {
-            Esc.Invoke();
+            if(Menu.activeSelf == false)
+            {
+                Cursor.visible = true; 
+                Screen.lockCursor = false;
+                Menu.SetActive(true);
+            }
+            else
+            {
+                Cursor.visible = false;
+                Menu.SetActive(false);
+                Screen.lockCursor = true; 
+            }
         }
+    }
+
+    public void CursorActiveSelf (bool active)
+    {
+        Cursor.visible = active; 
     }
     
 }
