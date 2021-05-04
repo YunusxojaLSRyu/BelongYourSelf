@@ -1,0 +1,8 @@
+newmtl mtl_wpn_h1_asl_ak47_mag_base
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Ks 0.50 0.50 0.50
+map_Kd ..\\_images\\wpn_h1_asl_ak47_mag_base_col.tga
+map_bump ..\\_images\\wpn_h1_asl_ak47_mag_base_nml.tga
+map_Ks ..\\_images\\~wpn_h1_asl_ak47_mag_base_spc~7bdaa509.tga

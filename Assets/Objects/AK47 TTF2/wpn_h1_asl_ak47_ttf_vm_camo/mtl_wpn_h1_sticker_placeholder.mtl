@@ -1,0 +1,7 @@
+newmtl mtl_wpn_h1_sticker_placeholder
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Ks 0.50 0.50 0.50
+map_bump ..\\_images\\wpn_h1_sticker_nml.tga
+map_Ks ..\\_images\\~$white-r32g32b32&wpn_h1_sticker_cos-l.tga
