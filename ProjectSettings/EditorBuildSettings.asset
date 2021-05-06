@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Catacombs.unity
     guid: 19f882895f49a4c4e9ca08fbe711487b
+  - enabled: 1
+    path: Assets/Scenes/FinalCatScene.unity
+    guid: f66bec665bcb7804689c4401b1f3f066
+  - enabled: 1
+    path: Assets/Scenes/PreFinalScene.unity
+    guid: 1a0b91b683735554193ae2bddd1d943a
   m_configObjects: {}
