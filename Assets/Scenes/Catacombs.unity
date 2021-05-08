@@ -2751,6 +2751,14 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2073109842, guid: 6382e33277a693b4ebef5961e960ddba, type: 3}
+      propertyPath: rays
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 2073109842, guid: 6382e33277a693b4ebef5961e960ddba, type: 3}
+      propertyPath: angle
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 2073109842, guid: 6382e33277a693b4ebef5961e960ddba, type: 3}
       propertyPath: target
       value: 
       objectReference: {fileID: 1117540769}
