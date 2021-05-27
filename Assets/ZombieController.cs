@@ -129,7 +129,7 @@ public class ZombieController : MonoBehaviour
                 }
                 if (_dist < distance)
                 {
-                    if (RayToScan())
+                    if (RayToScan() && _dist > _hitRadius)
                     {
                        _nav.enabled = true;
                        _nav.SetDestination(_player.transform.position);
