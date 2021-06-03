@@ -18,5 +18,6 @@ public class FirstPersonMovement : MonoBehaviour
         {
             OnMovement.Invoke();
         }
+        
     }
 }
